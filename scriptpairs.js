@@ -25,55 +25,39 @@ function shuffleCards(array) {
     return array;
 }
 
-console.log(shuffleCards(cardList));
+shuffleCards(cardList);
+
+var divCards = document.getElementById('cards-container');
+var divCardsContent = "";
+
+for (var i = 0; i < cardList.length; i++) {
+  divCardsContent = divCardsContent + '<img src="images/cartas_reverso_harry_potter.png" data-index="' + i + '" class="card">';
+}
+
+divCards.innerHTML = divCardsContent;
 
 
-
-// var image = [];
-// var imageId = [];
-//
-// for (var k = 0; k < totalCards; k++) {
-//   image[k] = "image" + k;
-//   imageId[k] = "card" + k;
-// }
-//
-// console.log(image);
-// console.log(imageId);
 function activate() {
 
-  var dataIndex = image1.getAttribute('data-index');
+  var dataIndex = this.getAttribute('data-index');
   var index = parseInt(dataIndex);
-  console.log(index);
   cardList[index].active = true;
-  console.log(cardList[index].active);
-  image1.setAttribute('src', cardList[index].url);
+  this.setAttribute('src', cardList[index].url);
 
   if (previousActiveCard === null) {
-    previousActiveCard = image1;
+    previousActiveCard = this;
 
   }
   else {
-    
+
   }
 }
 
 
-var image1 = document.querySelector('#card1');
-image1.addEventListener("click", activate);
+var cardsElements = document.querySelectorAll('.card');
+console.log(cardsElements);
 
-// var image2 = document.querySelector(#card2);
-// var image3 = document.querySelector(#card3);
-// var image4 = document.querySelector(#card4);
-// var image5 = document.querySelector(#card5);
-// var image6 = document.querySelector(#card6);
-// var image7 = document.querySelector(#card7);
-// var image8 = document.querySelector(#card8);
-// var image9 = document.querySelector(#card9);
-// var image10 = document.querySelector(#card10);
-// var image11 = document.querySelector(#card11);
-// var image12 = document.querySelector(#card12);
-//
-//
-
-
-// image1.addEventListener()
+for (var i = 0; i < cardsElements.length; i++) {
+  cardsElements[i].addEventListener("click", activate);
+}
+// image1.addEventListener("click", activate);
