@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   border: 0px solid #ccc;
 }
@@ -7,63 +7,52 @@ body {
   margin: 0;
   padding: 0;
   color: white;
-  align-items:center;
-
-  font-family:  'harry_pregular';
+  align-items: center;
+  font-family: 'harry_pregular';
   font-size: 40px;
-  font-weight:50;
-
-
+  font-weight: 50;
 }
 
 @font-face {
-    font-family: 'harry_pregular';
-    src: url('harryp__-webfont.woff2') format('woff2'),
-         url('harryp__-webfont.woff') format('woff');
-
-       font-style: normal;
-
+  font-family: 'harry_pregular';
+  src: url('harryp__-webfont.woff2') format('woff2'), url('harryp__-webfont.woff') format('woff');
+  font-style: normal;
 }
 
-
-a{
+a {
   text-decoration: none;
   color: white;
 }
 
-.all{
+.all {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-
-header{
+header {
   background-color: #dd7577;
   height: 120px;
   min-height: 15vh;
   font-size: 120px;
   text-align: center;
-
-
 }
 
-img#logoHarryPotter{
+img#logoHarryPotter {
   width: 320px;
   margin-left: 10px;
 }
 
-.container-games{
+.container-games {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items:center;
+  align-items: center;
   width: 100%;
   background-image: url("../images/fondo_pagina_principal_harry_potter.png");
   background-size: cover;
   height: 100%;
   flex-grow: 1;
-
 }
 
 .game-button {
@@ -73,26 +62,33 @@ img#logoHarryPotter{
   border-radius: 10px;
   text-align: center;
   padding: 30px;
-  background: #94657b; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(-90deg, #5c525d,#94657b ); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, #5c525d , #94657b); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, #5c525d, #94657b); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-90deg,#5c525d , #94657b); /* Standard syntax */
+  background: #94657b;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, #5c525d, #94657b);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #5c525d, #94657b);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #5c525d, #94657b);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #5c525d, #94657b);
+  /* Standard syntax */
   opacity: 0.8;
-
 }
 
 .game-button:hover {
-  background: #ff9c5e; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(-90deg, #dd7577,#ff9c5e ); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, #dd7577, #ff9c5e); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, #dd7577, #ff9c5e); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-90deg,#dd7577, #ff9c5e); /* Standard syntax */
+  background: #ff9c5e;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, #dd7577, #ff9c5e);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #dd7577, #ff9c5e);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #dd7577, #ff9c5e);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #dd7577, #ff9c5e);
+  /* Standard syntax */
 }
 
-
-
-footer{
+footer {
   background-color: #dd7577;
   height: 40px;
   width: 100%;
@@ -101,10 +97,9 @@ footer{
   justify-content: center;
   font-size: 20px;
   color: #5c525d;
-
 }
-/* COMIENZO CSS PAGINA DIVINATION GAME*/
-.container-number{
+
+.container-number {
   width: 100%;
   background-image: url("../images/fondo_pagina_principal_harry_potter.png");
   background-size: cover;
@@ -115,47 +110,44 @@ footer{
   align-items: center;
 }
 
-.white-box{
-width: 70%;
-min-width: 400px;
-max-width: 600px;
-height: 90%;
-background-color: rgba(255, 255, 255, 0.85);
-border-radius: 10px;
-color: #5c525d;
-text-align: center;
-
+.white-box {
+  width: 70%;
+  min-width: 400px;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  color: #5c525d;
+  text-align: center;
 }
 
-input[type=number]{
-   font-family:"harry_pregular";
-   font-size: 20px;
-   color: #5c525d;
-   padding: 12px 20px;
-   display: block;
-   margin: auto;
-   box-sizing: border-box;
-   border-radius: 10px;
-     width: 55%;
-     height: 70px;
-     border-left: 50px solid #dd7577;
-     border-right: 50px solid #ff9c5e;
-     -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-     box-sizing: border-box;
-     background-position: 0 0, 0 100% ;
-     background-repeat: no-repeat;
-     -webkit-background-size: 100% 20px;
-     -moz-background-size: 100% 20px;
-     background-size: 100% 20px;
-     background-image: -webkit-linear-gradient(left, #dd7577 0%, #ff9c5e 100%), -webkit-linear-gradient(left,#dd7577 0%, #ff9c5e 100%);
-     background-image: -moz-linear-gradient(left, #dd7577 0%, #ff9c5e 100%), -moz-linear-gradient(left, #dd7577 0%, #ff9c5e 100%);
-     background-image: -o-linear-gradient(left, #dd7577 0%, #ff9c5e 100%), -o-linear-gradient(left, #dd7577 0%, #ff9c5e 100%);
-     background-image: linear-gradient(to right, #dd7577 0%, #ff9c5e 100%), linear-gradient(to right, #dd7577 0%, #ff9c5e 100%);
+input[type=number] {
+  font-family: "harry_pregular";
+  font-size: 20px;
+  color: #5c525d;
+  padding: 12px 20px;
+  display: block;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 55%;
+  height: 70px;
+  border-left: 50px solid #dd7577;
+  border-right: 50px solid #ff9c5e;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 20px;
+  -moz-background-size: 100% 20px;
+  background-size: 100% 20px;
+  background-image: -webkit-linear-gradient(left, #dd7577 0%, #ff9c5e 100%), -webkit-linear-gradient(left, #dd7577 0%, #ff9c5e 100%);
+  background-image: -moz-linear-gradient(left, #dd7577 0%, #ff9c5e 100%), -moz-linear-gradient(left, #dd7577 0%, #ff9c5e 100%);
+  background-image: -o-linear-gradient(left, #dd7577 0%, #ff9c5e 100%), -o-linear-gradient(left, #dd7577 0%, #ff9c5e 100%);
+  background-image: linear-gradient(to right, #dd7577 0%, #ff9c5e 100%), linear-gradient(to right, #dd7577 0%, #ff9c5e 100%);
+}
 
- }
-
-input#button{
+input#button {
   width: 100px;
   border-radius: 10px;
   border-width: 2px;
@@ -163,33 +155,31 @@ input#button{
   color: #5c525d;
   display: inline;
   margin: auto;
-  background-color: rgba(0,0,0,0);
-  font-family:"harry_pregular";
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "harry_pregular";
   font-size: 20px;
   padding: 5px;
 }
 
-input#reset{
-
+input#reset {
   width: 100px;
   border-radius: 10px;
   border: none;
   display: inline;
   margin: auto;
   color: white;
-  font-family:"harry_pregular";
+  font-family: "harry_pregular";
   font-size: 20px;
   padding: 5px;
   margin-bottom: 20px;
-
   background: #5c525d;
-  background: -webkit-linear-gradient(left,#dd7577, #5c525d);
-  background: -o-linear-gradient(right, #dd7577,#5c525d);
+  background: -webkit-linear-gradient(left, #dd7577, #5c525d);
+  background: -o-linear-gradient(right, #dd7577, #5c525d);
   background: -moz-linear-gradient(right, #dd7577, #5c525d);
-  background: linear-gradient(to right, #dd7577,#5c525d);
+  background: linear-gradient(to right, #dd7577, #5c525d);
 }
 
-p#instructions{
+p#instructions {
   height: 20%;
   display: block;
   margin-top: 10px;
@@ -197,15 +187,15 @@ p#instructions{
   font-size: 30px;
 }
 
-#divinationHeader{
+#divinationHeader {
   background: #5c525d;
   background: -webkit-linear-gradient(left, #5c525d, #dd7577);
-  background: -o-linear-gradient(right,#5c525d, #dd7577);
+  background: -o-linear-gradient(right, #5c525d, #dd7577);
   background: -moz-linear-gradient(right, #5c525d, #dd7577);
-  background: linear-gradient(to right,#5c525d, #dd7577);
+  background: linear-gradient(to right, #5c525d, #dd7577);
 }
 
-p#feedback-divination{
+p#feedback-divination {
   font-size: 30px;
   width: 80%;
   max-width: 600px;
@@ -219,7 +209,7 @@ p#feedback-divination{
   background-position: center;
 }
 
-img#logoDataTypas{
+img#logoDataTypas {
   width: 80px;
   margin-left: 10px;
 }
@@ -229,10 +219,22 @@ img#logoDataTypas{
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-content: space-around;
 }
 
 .card {
   display: block;
   width: 22%;
   border-radius: 14px;
+  padding: 4px 0;
+}
+
+.reset-game {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.reset-game a {
+  color: #ff9c5e;
 }
