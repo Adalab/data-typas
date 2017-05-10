@@ -53,9 +53,7 @@ function activate() {
     var previousDataIndex = previousActiveCard.getAttribute('data-index');
     var previousIndex = parseInt(previousDataIndex);
     if (cardList[previousIndex].id === cardList[index].id) {
-      console.log("Hola");
       previousActiveCard = null;
-      // set attribute de las dos cartas src a cartas trasera hp
     }
     else {
       var currentCard = this;
@@ -64,7 +62,6 @@ function activate() {
         previousActiveCard.setAttribute('src', backPicture);
         previousActiveCard = null;
       }, 1000)
-
 
     }
 
@@ -78,4 +75,3 @@ console.log(cardsElements);
 for (var i = 0; i < cardsElements.length; i++) {
   cardsElements[i].addEventListener("click", activate);
 }
-// image1.addEventListener("click", activate);
